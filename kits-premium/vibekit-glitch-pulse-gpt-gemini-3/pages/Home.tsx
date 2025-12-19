@@ -1,8 +1,33 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { SITE_DATA } from '../data';
 import { Card } from '../components/Card';
 import { Link } from 'react-router-dom';
+import { ContentItem } from '../types';
+
+const StoryCircle: React.FC<{ item: ContentItem }> = ({ item }) => {
+  const [error, setError] = useState(false);
+  
+  return (
+    <Link to={`/${item.type}s/${item.id}`} className="shrink-0 flex flex-col items-center gap-4 group">
+      <div className="w-24 h-24 rounded-full p-1 pulse-gradient shadow-xl transform transition-all duration-500 group-hover:scale-110 active:scale-95">
+        <div className="w-full h-full bg-black rounded-full overflow-hidden border-4 border-black ring-1 ring-white/10 flex items-center justify-center">
+          {error ? (
+            <span className="font-black text-white/20 text-xs uppercase italic">{item.title.charAt(0)}</span>
+          ) : (
+            <img 
+              src={item.imageUrl} 
+              alt={item.title} 
+              onError={() => setError(true)}
+              className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" 
+            />
+          )}
+        </div>
+      </div>
+      <span className="text-[9px] font-black text-slate-500 group-hover:text-white transition-colors truncate max-w-[100px] uppercase tracking-widest">{item.title}</span>
+    </Link>
+  );
+};
 
 export const Home: React.FC = () => {
   const allItems = [
@@ -23,18 +48,7 @@ export const Home: React.FC = () => {
         </h2>
         <div className="flex gap-8 overflow-x-auto hide-scrollbar pb-6 -mx-2 px-2 scroll-smooth">
           {stories.map(item => (
-            <Link key={item.id} to={`/${item.type}s/${item.id}`} className="shrink-0 flex flex-col items-center gap-4 group">
-              <div className="w-24 h-24 rounded-full p-1 pulse-gradient shadow-xl transform transition-all duration-500 group-hover:scale-110 active:scale-95">
-                <div className="w-full h-full bg-black rounded-full overflow-hidden border-4 border-black ring-1 ring-white/10">
-                  <img 
-                    src={item.imageUrl} 
-                    alt={item.title} 
-                    className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" 
-                  />
-                </div>
-              </div>
-              <span className="text-[9px] font-black text-slate-500 group-hover:text-white transition-colors truncate max-w-[100px] uppercase tracking-widest">{item.title}</span>
-            </Link>
+            <StoryCircle key={item.id} item={item} />
           ))}
           <Link to="/join" className="shrink-0 flex flex-col items-center gap-4 group">
               <div className="w-24 h-24 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-500 group-hover:text-white group-hover:bg-white/10 transition-all cursor-pointer shadow-lg">
@@ -90,7 +104,6 @@ export const Home: React.FC = () => {
           {featured.slice(1, 5).map((item) => (
             <Card key={`${item.type}-${item.id}`} item={item} />
           ))}
-          {/* Add more grid items if needed */}
         </div>
       </section>
 
