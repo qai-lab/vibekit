@@ -1,0 +1,7 @@
+{
+  "name": "VibeKit Indigo Flux (GPT Prompt)",
+  "description": "A high-performance, SEO-friendly content platform for apps, podcasts, and AI insights, powered by JSON-driven architecture and Gemini AI integration.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

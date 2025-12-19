@@ -1,0 +1,8 @@
+{
+  "name": "VibeKit Nexus (Claude Prompt)",
+  "description": "A stunning personal portfolio showcase for AI-driven development projects, featuring project galleries, podcast sections, and AI insights.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

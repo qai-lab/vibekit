@@ -1,0 +1,8 @@
+{
+  "name": "VibeKit Obsidian (Gemini Prompt)",
+  "description": "A high-end, senior-level developer portfolio featuring project showcases, podcast appearances, and latest news, integrated with Gemini AI for interactive data exploration.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
