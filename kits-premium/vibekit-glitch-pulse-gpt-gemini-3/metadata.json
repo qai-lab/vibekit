@@ -1,0 +1,8 @@
+
+{
+  "name": "vibekit-glitch-pulse-gpt-gemini-3",
+  "description": "A hyper-social, glitch-inspired aesthetic for showcasing AI-powered creativity. Built for the high-frequency generation.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

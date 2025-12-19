@@ -1,0 +1,9 @@
+
+{
+  "name": "vibekit-noir-agency-gemini-3",
+  "description": "A high-end, editorial ad agency portfolio theme featuring minimalist aesthetics, bold typography, and stark contrasts.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

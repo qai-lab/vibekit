@@ -1,0 +1,8 @@
+{
+  "name": "vibekit-nexus-claude-gemini-3",
+  "description": "A stunning personal portfolio showcase for AI-driven development projects, featuring project galleries, podcast sections, and AI insights.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
