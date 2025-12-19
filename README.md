@@ -1,15 +1,28 @@
-# Vibekit
+# VibeKit
 
 **The Modern UI & SaaS Starter Kit for Building Beautiful Apps**
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
+**Created by [Boyuan Qian](https://github.com/pinkpixel-dev)** | A [QAI](https://qai.io) Project
+
+[![X (Twitter)](https://img.shields.io/badge/@drboyuanqian-000000?style=flat&logo=x&logoColor=white)](https://x.com/drboyuanqian)
+[![X (Twitter)](https://img.shields.io/badge/@qai__lab-000000?style=flat&logo=x&logoColor=white)](https://x.com/qai_lab)
+[![LinkedIn](https://img.shields.io/badge/Boyuan%20Qian-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/boyuanqian)
+[![LinkedIn](https://img.shields.io/badge/QAI%20Lab-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/company/qai-lab)
+
+---
+
+## Demo
+
+[![Watch the Demo](https://img.shields.io/badge/Watch%20Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=0A5cLBfXsA4)
+
 ---
 
 ## Overview
 
-Vibekit is an open-source UI component library and SaaS starter kit designed to help developers build modern, visually stunning applications faster. Whether you're building a portfolio, dashboard, or full-featured SaaS product, Vibekit provides the building blocks you need.
+VibeKit is an open-source UI component library and SaaS starter kit designed to help developers build modern, visually stunning applications faster. Whether you're building a portfolio, dashboard, or full-featured SaaS product, VibeKit provides the building blocks you need.
 
 ## Features
 
@@ -20,21 +33,23 @@ Vibekit is an open-source UI component library and SaaS starter kit designed to 
 - **Customizable** - Easily theme and customize to match your brand
 - **Production Ready** - Battle-tested components ready for production use
 
-## Showcases
+## Kits
 
-Explore real-world applications built with Vibekit:
+### Content Kits
 
-| Showcase | Description | Stack |
-|----------|-------------|-------|
-| [Nebula](./showcases/nebula) | Original showcase application | React, TypeScript, Vite |
-| [Nexus](./showcases/nexus) | Modern dashboard design | React, TypeScript, Vite |
-| [Neon Zen](./showcases/neon-zen) | Minimalist aesthetic theme | React, TypeScript, Vite |
-| [Obsidian](./showcases/obsidian) | Dark mode focused design | React, TypeScript, Vite |
-| [Indigo Flux](./showcases/indigo-flux) | Vibrant color scheme | React, TypeScript, Vite |
-| [Midnight Pulse](./showcases/midnight-pulse) | Night-themed interface | React, TypeScript, Vite |
-| [Slate Ethereal](./showcases/slate-ethereal) | Subtle, professional look | React, TypeScript, Vite |
-| [Portfolio Glass](./showcases/portfolio-glass) | Glassmorphism portfolio | React, TypeScript, Vite |
-| [Simple Flow](./showcases/simple-flow) | Clean, minimal design | React, TypeScript, Vite |
+Ready-to-use content-focused applications built with VibeKit:
+
+| Kit | Description | Stack |
+|-----|-------------|-------|
+| [Nebula](./kits/vibekit-nebula-original) | Original content application | React, TypeScript, Vite |
+| [Nexus](./kits/vibekit-nexus-claude-prompt) | Modern dashboard design | React, TypeScript, Vite |
+| [Neon Zen](./kits/vibekit-neon-zen-gemini-prompt) | Minimalist aesthetic theme | React, TypeScript, Vite |
+| [Obsidian](./kits/vibekit-obsidian-gemini-prompt) | Dark mode focused design | React, TypeScript, Vite |
+| [Indigo Flux](./kits/vibekit-indigo-flux-gpt-prompt) | Vibrant color scheme | React, TypeScript, Vite |
+| [Midnight Pulse](./kits/vibekit-midnight-pulse-gpt-prompt) | Night-themed interface | React, TypeScript, Vite |
+| [Slate Ethereal](./kits/vibekit-slate-ethereal-gpt-prompt) | Subtle, professional look | React, TypeScript, Vite |
+| [Portfolio Glass](./kits/vibekit-portfolio-glass-gemini-prompt) | Glassmorphism portfolio | React, TypeScript, Vite |
+| [Simple Flow](./kits/vibekit-simple-flow-grok-prompt) | Clean, minimal design | React, TypeScript, Vite |
 
 ## Quick Start
 
@@ -50,12 +65,13 @@ Explore real-world applications built with Vibekit:
 git clone https://github.com/QAI-Labs/vibekit.git
 cd vibekit
 
+# Navigate to a kit
+cd kits/vibekit-nebula-original
+
 # Install dependencies
 npm install
 
-# Run a showcase
-cd showcases/nebula
-npm install
+# Run the development server
 npm run dev
 ```
 
@@ -63,22 +79,19 @@ npm run dev
 
 ```
 vibekit/
-├── packages/
-│   ├── core/           # Core functionality and utilities
-│   └── ui/             # UI component library
-├── showcases/          # Example applications
-│   ├── nebula/
-│   ├── nexus/
-│   ├── neon-zen/
-│   ├── obsidian/
-│   ├── indigo-flux/
-│   ├── midnight-pulse/
-│   ├── slate-ethereal/
-│   ├── portfolio-glass/
-│   └── simple-flow/
-├── docs/               # Documentation
-├── .github/            # GitHub templates and workflows
-├── LICENSE             # MIT License
+├── kits/                                       # Starter kits
+│   ├── vibekit-nebula-original/                # Content kit
+│   ├── vibekit-nexus-claude-prompt/            # Content kit
+│   ├── vibekit-neon-zen-gemini-prompt/         # Content kit
+│   ├── vibekit-obsidian-gemini-prompt/         # Content kit
+│   ├── vibekit-indigo-flux-gpt-prompt/         # Content kit
+│   ├── vibekit-midnight-pulse-gpt-prompt/      # Content kit
+│   ├── vibekit-slate-ethereal-gpt-prompt/      # Content kit
+│   ├── vibekit-portfolio-glass-gemini-prompt/  # Content kit
+│   └── vibekit-simple-flow-grok-prompt/        # Content kit
+├── docs/                                       # Documentation
+├── .github/                                    # GitHub templates and workflows
+├── LICENSE                                     # MIT License
 └── README.md
 ```
 
@@ -101,7 +114,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 - Submit feature requests
 - Create pull requests
 - Improve documentation
-- Share your Vibekit projects
+- Share your VibeKit projects
 
 ## Community
 
@@ -114,14 +127,8 @@ Join our community to get help, share ideas, and connect with other developers:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Credits
-
-**Created by [Boyuan Qian](https://github.com/boyuanqian)**
-
-Vibekit is a [QAI](https://qai.dev) project, building tools for the modern developer.
-
 ---
 
 <p align="center">
-  <sub>Built with passion by the Vibekit team</sub>
+  <sub>Built with passion by the VibeKit team</sub>
 </p>
