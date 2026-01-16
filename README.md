@@ -9,7 +9,7 @@
 
 [![X (Twitter)](https://img.shields.io/badge/@drboyuanqian-000000?style=flat&logo=x&logoColor=white)](https://x.com/drboyuanqian)
 [![X (Twitter)](https://img.shields.io/badge/@qai__lab-000000?style=flat&logo=x&logoColor=white)](https://x.com/qai_lab)
-[![LinkedIn](https://img.shields.io/badge/Boyuan%20Qian-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/boyuanqian)
+[![LinkedIn](https://img.shields.io/badge/Boyuan%20Qian-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/dr-qian)
 [![LinkedIn](https://img.shields.io/badge/QAI%20Lab-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/company/qai-lab)
 
 ---
